@@ -53,7 +53,7 @@ module zrodholder(thickness=13, ylen=40, xlen=34){
                 translate([-board_thickness/2, 0, thickness/2]) rotate([-90, 0, 0]) screw();
                 //front screw
                 translate([14, 19, thickness/2]) rotate([0, -90, 0]) screw(head_drop=5);
-                translate([14, 33, thickness/2]) rotate([0, -90, 0]) screw(head_drop=5);
+                #translate([13.3, 33, thickness/2]) rotate([0, -90, 0]) screw(head_drop=5);
             }
         }
     }
