@@ -55,8 +55,8 @@ module idlermount(support=false){
         }
     }
     if (support) {
-        translate([0,-2,15]) cube([16,16,0.4]);
-        translate([0,-2,0]) cube([16,1.3,15]);
+        translate([0,-2.5,15]) cube([16,16,0.4]);
+        #translate([0,-2.5,0]) cube([16,1.8,15]);
     }
 
 }
