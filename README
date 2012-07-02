@@ -1,5 +1,9 @@
+all useful things were merged to master
+
+
 This is Prusa iteration 3
 Published under GPL v3
+
 
 To start:
 Copy configuration.scad.dist to configuration.scad and fill custom
