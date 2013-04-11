@@ -6,7 +6,7 @@
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://github.com/prusajr/PrusaMendel
 
-include <configuration.scad>
+include <../configuration.scad>
 
 module zmotorholder(thickness=(i_am_box == 0 ? 38 : 23), bottom_thickness=5){
     difference(){

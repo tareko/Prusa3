@@ -1,6 +1,6 @@
 #openscad -o output/bushing.stl bushing.scad
 
-INCLUDES = $(wildcard inc/*.scad)
+INCLUDES = $(wildcard ../inc/*.scad)
 
 MODELS = $(filter-out configuration.scad, $(wildcard *.scad))
 
@@ -15,7 +15,7 @@ STL_EXTRAS = $(STL_EXTRAS_1:%.scad=%.stl)
 
 extras: $(STL_EXTRAS)
 
-output/%.stl: %.scad $(INCLUDES) configuration.scad
+output/%.stl: %.scad $(INCLUDES) ../configuration.scad
 	openscad -o $@ $<
 
 clean:

@@ -6,7 +6,7 @@
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://github.com/prusajr/PrusaMendel
 
-include <configuration.scad>
+include <../configuration.scad>
 use <y-drivetrain.scad>
 
 module nutrod(r=4.4){

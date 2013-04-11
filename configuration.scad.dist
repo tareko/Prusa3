@@ -6,8 +6,8 @@
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://github.com/prusajr/PrusaMendel
 
-include <inc/metric.scad>;
-include <inc/conf_bushing.scad>;
+include <../inc/metric.scad>;
+include <../inc/conf_bushing.scad>;
 
 // Custom settings here, tailor to your supplies and print settings
 
@@ -67,7 +67,7 @@ bearing_623_double = [10, 8, 3, 0];
 
 idler_bearing = bearing_624_double;
 
-//Select carriage lenght
+//Select carriage length
 // 30 for single carriage extruder (two holes with centers 30mm apart)
 // 50 for wade or single with fan (three holes, 30-20)
 // 80 for full length carriage (four holes, 30-20-30)
@@ -95,12 +95,25 @@ y_threaded_rod_long_r = 5.4;
 // Thickness of the XZ plate board. Leave at 12 for single plate
 board_thickness = 12;
 
+// Select your hot-end mount ******************************************************
+
+// 0 = none; 1 = groove-mount (J-head/MakerGear etc.)
+hotend_mount = 1;
+
+hotend_groovemount_depth = 5;
+hotend_groovemount_diameter = 16;
+
+
+
 // END of custom settings
 
 
 // You are not supposed to change this
 board_to_xz_distance = 26;
 xaxis_rod_distance = 45;
+
+// X Rod distance for single plate model
+x_rod_distance = 45;
 
 //calculated from settings
 single_wall_width = width_over_thickness * layer_height;
@@ -141,7 +154,7 @@ z_delta = (bushing_z[1] <= 7.7) ? 0 : bushing_z[1] - 7.7;
 m3_nut_diameter_bigger = ((m3_nut_diameter  / 2) / cos (180 / 6))*2;
 
 // functions
-include <inc/functions.scad>
+include <../inc/functions.scad>
 
 // These constants define the geometry of the complete-printer.scad
 

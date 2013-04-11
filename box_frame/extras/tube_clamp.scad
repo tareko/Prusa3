@@ -1,7 +1,7 @@
 //makes tube clamping part. Useful for strenghtening Z axis tubing or as holder for Z axis endstop.
 // GNU GPL v3
 // Václav 'ax' Hůla <axtheb@gmail.com>
-include <../configuration.scad>;
+include <../../configuration.scad>;
 $fn=64;
 
 module tube_clamp(tube_r, wall_width=3, screw=false) {

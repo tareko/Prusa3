@@ -6,8 +6,8 @@
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://github.com/prusajr/PrusaMendel
 
-include <configuration.scad>
-use <inc/bearing-guide.scad>
+include <../configuration.scad>
+use <../inc/bearing-guide.scad>
 
 module motorholder(thickness=10){
     difference(){

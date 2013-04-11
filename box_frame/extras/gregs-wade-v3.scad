@@ -5,8 +5,8 @@
 // http://www.thingiverse.com/thing:6713
 // modified for i3 by vlnofka <vlnofka@gmail.com>
 
-include<../configuration.scad>
-include<../inc/functions.scad>
+include<../../configuration.scad>
+include<../../inc/functions.scad>
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Define the hotend_mounting style you want by specifying hotend_mount=style1+style2 etc.

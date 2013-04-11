@@ -6,9 +6,9 @@
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://github.com/prusajr/PrusaMendel
 
-include <configuration.scad>
+include <../configuration.scad>
 use <bushing.scad>
-use <inc/bearing-guide.scad>
+use <../inc/bearing-guide.scad>
 use <y-drivetrain.scad>
 
 //height and width of the x blocks depend on x smooth rod radius

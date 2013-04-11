@@ -5,7 +5,7 @@
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://prusamendel.org
 
-include <../configuration.scad>
+include <../../configuration.scad>
 
 
 

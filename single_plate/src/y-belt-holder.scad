@@ -5,7 +5,7 @@
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://prusamendel.org
 
-include <../configuration.scad>
+include <../../configuration.scad>
 
 module belt_holder_base(){
  translate([-33-8.5,0,-1]) cube([33,15,16]); 

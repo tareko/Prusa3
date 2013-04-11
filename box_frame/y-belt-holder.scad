@@ -6,7 +6,7 @@
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://github.com/prusajr/PrusaMendel
 
-include <configuration.scad>
+include <../configuration.scad>
 translate([28.5, 0, 0]){
 
     %translate([0, 0, 35/2]) cube([20, 6, 35], center = true);

@@ -3,7 +3,7 @@
 // Václav 'ax' Hůla <axtheb@gmail.com>
 // Josef Průša <josefprusa@me.com>
 
-include <../configuration.scad>
+include <../../configuration.scad>
 use <inc/parametric_involute_gear_v5.0.scad>
 
 small();

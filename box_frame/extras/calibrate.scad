@@ -3,7 +3,7 @@
 // GNU GPL v3
 // Václav 'ax' Hůla <axtheb@gmail.com>
 
-include <../configuration.scad>
+include <../../configuration.scad>
 use <../bushing.scad>
 
 use <../x-end.scad>

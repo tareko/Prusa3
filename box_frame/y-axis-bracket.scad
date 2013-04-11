@@ -1,4 +1,4 @@
-include <configuration.scad>
+include <../configuration.scad>
 
 module bolt_track(width, length, height) {
     hwidth = width / 2;
