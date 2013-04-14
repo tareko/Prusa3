@@ -6,6 +6,7 @@
 // http://prusamendel.org
 
 include <../../configuration.scad>
+include <../../inc/metric.scad>
 use <inc/bearing.scad>
 
 module x_carriage_base(){
@@ -43,10 +44,10 @@ module x_carriage_holes(){
  // Long bearing holder holes cutter
   translate([-33/2,x_rod_distance+2,0]) rotate([0,0,90]) horizontal_bearing_holes(2);
   // Extruder mounting holes
-  translate([-16.5+15,24,-1])cylinder(r=1.7, h=20, $fn=32);
-  translate([-16.5+15,24,10])cylinder(r=3.3, h=20, $fn=6); 
-  translate([-16.5-15,24,-1])cylinder(r=1.7, h=20, $fn=32);
-  translate([-16.5-15,24,10])cylinder(r=3.3, h=20, $fn=6); 	
+  translate([-16.5+15,24,-1])cylinder(r=m3_diameter/2, h=20, $fn=32);
+  translate([-16.5+15,24,10])cylinder(r=m3_nut_diameter_horizontal/2, h=20, $fn=6); 
+  translate([-16.5-15,24,-1])cylinder(r=m3_diameter/2, h=20, $fn=32);
+  translate([-16.5-15,24,10])cylinder(r=m3_nut_diameter_horizontal/2, h=20, $fn=6); 	
 }
 
 module x_carriage_fancy(){

@@ -7,12 +7,15 @@
 
 // DONT CHANGE THIS FILE! ALTER VALUES IN CONFIGURATION.SCAD INSTEAD
 
+// Bearings
+linear_bearing_diameter = 15.5;
+
 // RODS
 
 threaded_rod_diameter = 8.7;
 threaded_rod_diameter_horizontal = 8.7;
-smooth_bar_diameter = 8;
-smooth_bar_diameter_horizontal = 8.5;
+smooth_bar_diameter = 8.3;
+smooth_bar_diameter_horizontal = 8.2;
 
 // Nuts and bolts
 
@@ -20,6 +23,10 @@ smooth_bar_diameter_horizontal = 8.5;
 m8_diameter = 9;
 //iso4032 says Width across corners = 14.38
 m8_nut_diameter = 14.1;
+
+m5_diameter = 6;
+m5_nut_diameter = 9.8;
+
 
 m4_diameter = 4.7;
 //iso4032 says 7.66

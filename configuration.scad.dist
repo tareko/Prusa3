@@ -6,8 +6,8 @@
 // http://www.reprap.org/wiki/Prusa_Mendel
 // http://github.com/prusajr/PrusaMendel
 
-include <../inc/metric.scad>;
-include <../inc/conf_bushing.scad>;
+include <inc/metric.scad>;
+include <inc/conf_bushing.scad>;
 
 // Custom settings here, tailor to your supplies and print settings
 
@@ -131,7 +131,7 @@ z_delta = (bushing_z[1] <= 7.7) ? 0 : bushing_z[1] - 7.7;
 
 // threaded_rod_diameter = 0;
 // threaded_rod_diameter_horizontal = 0;
-// smooth_bar_diameter = 0;
+// smooth_bar_diameter = 8.5;
 // smooth_bar_diameter_horizontal = 0;
 
 // Nuts and bolts
